@@ -22,7 +22,7 @@ export default function tableView() {
     { title: "Description", field: "pointDesc" },
     { title: "Signal Code", field: "signalCode" },
     { title: "X-Mit", field: "xmit" },
-    { title: "Site Date", field: "siteDate", render: rowData => moment(rowData.validated_at).format('DD/MM/YYYY HH:MM:SS')},
+    { title: "Site Date", field: "siteDate", type: "datetime"},
   ];
 
   return (
